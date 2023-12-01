@@ -8,27 +8,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="navbar">
           <div>
-            <a href="#"><img src="Images/rsz_logo.png" alt="Logo" /></a>
+            <a href="#"
+              ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
+            /></a>
           </div>
-          <div>
-            <button><i class="fa-solid fa-bars"></i></button>
-          </div>
-          <div>
-            <ul>
-              <li><a href="index1.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="portfolio1.html">Portfolio</a>
-              </li>
-              <li><a href="skills1.html">Skills</a></li>
-              <li><a href="contact-me.html">Contact Me</a></li>
-            </ul>
+          <div class="hamburger-menu">
+            <i class="fa-solid fa-bars hamburger-icon"></i>
+            <div class="hamburger-content">
+              <ul>
+                <li class="nav-list"><a href="index1.html">Home</a></li>
+                <li class="nav-list"><a href="about.html">About</a></li>
+                <li class="nav-list">
+                  <a href="portfolio1.html">Portfolio</a>
+                </li>
+                <li class="nav-list"><a href="#">Skills</a></li>
+                <li class="nav-list">
+                  <a href="contact-me.html">Contact Me</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -37,7 +47,7 @@
       <!-- Skills Area -->
       <section>
         <div>
-          <h2>Skills</h2>
+          <h2 class="headers">Skills</h2>
           <div class="desc">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -45,94 +55,118 @@
             </p>
           </div>
         </div>
-        <div>
+
+        <!--Skills-->
+
+        <div class="skillz">
           <div>
             <div>
               <h3>Web Development</h3>
             </div>
-            <div class="progress-bar"></div>
+            <div class="progress-bar">
+              <div class="skill web">89%</div>
+            </div>
           </div>
           <div>
             <div>
               <h3>UI/UX Design</h3>
             </div>
-            <div class="progress-bar"></div>
+            <div class="progress-bar">
+              <div class="skill ui">91%</div>
+            </div>
           </div>
           <div>
             <div>
               <h3>App Design</h3>
             </div>
-            <div class="progress-bar"></div>
+            <div class="progress-bar">
+              <div class="skill app">80%</div>
+            </div>
           </div>
           <div>
             <div>
               <h3>Problem Solving</h3>
             </div>
-            <div class="progress-bar"></div>
+            <div class="progress-bar">
+              <div class="skill problem-solving">83%</div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Testimonials -->
       <section>
-        <div>
-          <div>
-            <div>
-              <h4>Samuel Endale</h4>
-              <h5>Managing Director, DevignEdge</h5>
+        <div class="testimonials">
+          <h2 class="headers">Testimonials</h2>
+          <div class="single-testimonial">
+            <div class="test-head">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div class="name-position">
+                <h4>Samuel Endale</h4>
+                <h5>Managing Director, DevignEdge</h5>
+              </div>
             </div>
             <div>
-              <q>
+              <q class="quote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
+                ut enim voluptates, quos blanditiis voluptatum iure corporis,
+                commodi, nesciunt est minus in provident quo.
               </q>
             </div>
           </div>
-          <div>
-            <div>
-              <h4>Yohannes Hailemariam</h4>
-              <h5>Managing Director, DevignEdge</h5>
+          <div class="single-testimonial">
+            <div class="test-head">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div class="name-position">
+                <h4>Yohannes Hailemariam</h4>
+                <h5>Managing Director, DevignEdge</h5>
+              </div>
             </div>
             <div>
-              <q>
+              <q class="quote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
+                ut enim voluptates, quos blanditiis voluptatum iure corporis,
+                commodi, nesciunt est minus in provident quo.
               </q>
             </div>
           </div>
-          <div>
-            <div>
-              <h4>Fuad Salo</h4>
-              <h5>Managing Director, DevignEdge</h5>
+          <div class="single-testimonial">
+            <div class="test-head">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div class="name-position">
+                <h4>Fuad Salo</h4>
+                <h5>Managing Director, DevignEdge</h5>
+              </div>
             </div>
             <div>
-              <q>
+              <q class="quote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
+                ut enim voluptates, quos blanditiis voluptatum iure corporis,
+                commodi, nesciunt est minus in provident quo.
               </q>
             </div>
           </div>
-          <div>
-            <div>
-              <h4>Abenezer Tileye</h4>
-              <h5>Managing Director, DevignEdge</h5>
+          <div class="single-testimonial">
+            <div class="test-head">
+              <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div class="name-position">
+                <h4>Abenezer Tiliye</h4>
+                <h5>Managing Director, DevignEdge</h5>
+              </div>
             </div>
             <div>
-              <q>
+              <q class="quote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
+                ut enim voluptates, quos blanditiis voluptatum iure corporis,
+                commodi, nesciunt est minus in provident quo.
               </q>
             </div>
           </div>
@@ -144,12 +178,16 @@
     <!-- Footer Area -->
     <footer>
       <div>
-        <a href="#">Logo</a>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          saepe?
-        </p>
-        <ul>
+        <div class="end-logo">
+          <a href="#"
+            ><img class="logo" src="Images/rsz_logo.png" alt="Logo"
+          /></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            saepe?
+          </p>
+        </div>
+        <ul class="socials">
           <li>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </li>
@@ -166,14 +204,14 @@
       </div>
       <div>
         <h2>Useful Links</h2>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
+        <ul class="useful-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div>
+      <div class="contact-info">
         <h2>Contact Info</h2>
         <address>
           <p>
@@ -186,9 +224,9 @@
           </ul>
         </address>
       </div>
-      <div>
-        <p>Copyright. Lorem, ipsum dolor.</p>
-        <p>Copyright. Lorem, ipsum dolor.</p>
+      <div class="copyright">
+        <p>Copyright 2023. All Rights Reserved</p>
+        <p>Powered by Simon</p>
       </div>
     </footer>
   </body>
