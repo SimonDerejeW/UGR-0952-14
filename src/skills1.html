@@ -8,188 +8,292 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <div>
-            <a href="#"><img src="Images/rsz_logo.png" alt="Logo" /></a>
-          </div>
-          <div>
-            <button><i class="fa-solid fa-bars"></i></button>
-          </div>
-          <div>
-            <ul>
-              <li><a href="index1.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="portfolio1.html">Portfolio</a>
-              </li>
-              <li><a href="skills1.html">Skills</a></li>
-              <li><a href="contact-me.html">Contact Me</a></li>
-            </ul>
-          </div>
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="Images/rsz_logo.png" alt="Logo" class="logo" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="index1.html" class="navbar-item">Home</a>
+          <a href="about.html" class="navbar-item">About</a>
+          <a href="portfolio1.html" class="navbar-item">Portfolio</a>
+          <a href="#" class="navbar-item">Skills</a>
+          <a href="contact-me.html" class="navbar-item">Contact Me</a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+
     <main>
       <!-- Skills Area -->
-      <section>
-        <div>
-          <h2>Skills</h2>
-          <div class="desc">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              sunt nesciunt, quod deleniti alias molestiae.
-            </p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <div>
-              <h3>Web Development</h3>
+      <section class="section">
+        <div class="columns">
+          <!-- Skills Image and Description -->
+          <div class="column">
+            <div class="box">
+              <h2 class="title">Skills</h2>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  sunt nesciunt, quod deleniti alias molestiae.
+                </p>
+              </div>
             </div>
-            <div class="progress-bar"></div>
-          </div>
-          <div>
-            <div>
-              <h3>UI/UX Design</h3>
+            <!-- Skills -->
+            <div class="box">
+              <div class="columns">
+                <div class="column">
+                  <h3 class="subtitle">Web Development</h3>
+                  <progress
+                    class="progress is-primary"
+                    value="89"
+                    max="100"
+                  ></progress>
+                  <div class="column">
+                    <h3 class="subtitle">UI/UX Design</h3>
+                    <progress
+                      class="progress is-link"
+                      value="91"
+                      max="100"
+                    ></progress>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <h3 class="subtitle">App Design</h3>
+                  <progress
+                    class="progress is-info"
+                    value="80"
+                    max="100"
+                  ></progress>
+                  <div class="column">
+                    <h3 class="subtitle">Problem Solving</h3>
+                    <progress
+                      class="progress is-danger"
+                      value="83"
+                      max="100"
+                    ></progress>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="progress-bar"></div>
           </div>
-          <div>
-            <div>
-              <h3>App Design</h3>
-            </div>
-            <div class="progress-bar"></div>
-          </div>
-          <div>
-            <div>
-              <h3>Problem Solving</h3>
-            </div>
-            <div class="progress-bar"></div>
+
+          <!-- Skills Image Aside -->
+          <div class="column is-one-third is-hidden-touch">
+            <figure class="image is-4by3">
+              <img src="Images/cat_small.jpg" alt="Skills Image" />
+            </figure>
           </div>
         </div>
       </section>
 
       <!-- Testimonials -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <h4>Samuel Endale</h4>
-              <h5>Managing Director, DevignEdge</h5>
+      <section class="section">
+        <h2 class="title">Testimonials</h2>
+        <div class="swiper swiperCarousel">
+          <div class="columns">
+            <div class="column">
+              <div class="box">
+                <div class="is-flex is-flex-direction-column">
+                  <div class="is-flex mb-4">
+                    <figure class="mr-1">
+                      <p class="image is-64x64">
+                        <img
+                          src="Images/cat_small.jpg"
+                          alt="Testimonial Image"
+                        />
+                      </p>
+                    </figure>
+
+                    <p>
+                      <strong>Samuel Endale</strong> <br />
+                      <small>Managing Director, DevignEdge</small>
+                    </p>
+                  </div>
+                  <div>
+                    <q>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic ex ut enim voluptates, quos blanditiis voluptatum iure
+                      corporis, commodi, nesciunt est minus in provident quo.
+                    </q>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <q>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
-              </q>
+            <div class="column">
+              <div class="box">
+                <div class="is-flex is-flex-direction-column">
+                  <div class="is-flex mb-4">
+                    <figure class="mr-1">
+                      <p class="image is-64x64">
+                        <img
+                          src="Images/cat_small.jpg"
+                          alt="Testimonial Image"
+                        />
+                      </p>
+                    </figure>
+
+                    <p>
+                      <strong>Samuel Endale</strong> <br />
+                      <small>Managing Director, DevignEdge</small>
+                    </p>
+                  </div>
+                  <div>
+                    <q>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic ex ut enim voluptates, quos blanditiis voluptatum iure
+                      corporis, commodi, nesciunt est minus in provident quo.
+                    </q>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div>
-            <div>
-              <h4>Yohannes Hailemariam</h4>
-              <h5>Managing Director, DevignEdge</h5>
+            <div class="column">
+              <div class="box">
+                <div class="is-flex is-flex-direction-column">
+                  <div class="is-flex mb-4">
+                    <figure class="mr-1">
+                      <p class="image is-64x64">
+                        <img
+                          src="Images/cat_small.jpg"
+                          alt="Testimonial Image"
+                        />
+                      </p>
+                    </figure>
+
+                    <p>
+                      <strong>Samuel Endale</strong> <br />
+                      <small>Managing Director, DevignEdge</small>
+                    </p>
+                  </div>
+                  <div>
+                    <q>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic ex ut enim voluptates, quos blanditiis voluptatum iure
+                      corporis, commodi, nesciunt est minus in provident quo.
+                    </q>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <q>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
-              </q>
-            </div>
-          </div>
-          <div>
-            <div>
-              <h4>Fuad Salo</h4>
-              <h5>Managing Director, DevignEdge</h5>
-            </div>
-            <div>
-              <q>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
-              </q>
-            </div>
-          </div>
-          <div>
-            <div>
-              <h4>Abenezer Tileye</h4>
-              <h5>Managing Director, DevignEdge</h5>
-            </div>
-            <div>
-              <q>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex
-                ut enim voluptates, quos quia blanditiis voluptatum iure
-                corporis, commodi, nesciunt est minus in provident quo. Suscipit
-                corporis ratione ipsum natus nulla vel voluptatem odit assumenda
-                atque nihil, laborum dolore.
-              </q>
+            <div class="column">
+              <div class="box">
+                <div class="is-flex is-flex-direction-column">
+                  <div class="is-flex mb-4">
+                    <figure class="mr-1">
+                      <p class="image is-64x64">
+                        <img
+                          src="Images/cat_small.jpg"
+                          alt="Testimonial Image"
+                        />
+                      </p>
+                    </figure>
+
+                    <p>
+                      <strong>Samuel Endale</strong> <br />
+                      <small>Managing Director, DevignEdge</small>
+                    </p>
+                  </div>
+                  <div>
+                    <q>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic ex ut enim voluptates, quos blanditiis voluptatum iure
+                      corporis, commodi, nesciunt est minus in provident quo.
+                    </q>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <br />
 
-    <!-- Footer Area -->
-    <footer>
-      <div>
-        <a href="#">Logo</a>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          saepe?
-        </p>
-        <ul>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
+    <footer class="footer has-background-grey-dark has-text-white-bis">
+      <div class="columns">
+        <div class="column is-half">
+          <div class="content">
+            <img
+              class="logo"
+              src="Images/rsz_logo.png"
+              alt="Logo"
+              width="100px"
+              height="100px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, saepe?
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin is-medium"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h2 class="has-text-white-bis">Useful Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h2 class="has-text-white-bis">Contact Info</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, sint?
+            </p>
+            <ul>
+              <li>Tel: +251989971680</li>
+              <li>Email: simon.dereje@aait.edu.et</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2>Useful Links</h2>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact Info</h2>
-        <address>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi,
-            sint?
-          </p>
-          <ul>
-            <li>Tel: +251989971680</li>
-            <li>Email: simon.dereje@aait.edu.et</li>
-          </ul>
-        </address>
-      </div>
-      <div>
-        <p>Copyright. Lorem, ipsum dolor.</p>
-        <p>Copyright. Lorem, ipsum dolor.</p>
+
+      <div class="content is-flex is-justify-content-space-between">
+        <div>
+          <p>Copyright 2023. All Rights Reserved</p>
+        </div>
+        <div>
+          <p class="footer__p--powered">Powered by Simon</p>
+        </div>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    ></script>
   </body>
 </html>

@@ -3,165 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Me</title>
+    <title>Contact Page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="Images/rsz_logo.png" alt="Logo" class="logo" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="index1.html" class="navbar-item">Home</a>
+          <a href="about.html" class="navbar-item">About</a>
+          <a href="portfolio1.html" class="navbar-item">Portfolio</a>
+          <a href="skills1.html" class="navbar-item">Skills</a>
+          <a href="#" class="navbar-item">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="section contact-page">
+      <article class="columns contact-context">
+        <!-- Introduction -->
+        <div class="column">
           <div>
-            <a href="#"><img src="Images/rsz_logo.png" alt="Logo" /></a>
+            <div>
+              <h3 class="title is-3">It all starts with a hello</h3>
+            </div>
+            <div class="content contact-context__desc">
+              <p>Let's Work Together!</p>
+              <p>
+                To get started, please fill out the form below. I'll get back to
+                you ASAP.
+              </p>
+              <p>
+                Alternatively, you can contact me at
+                <a href="mailto:simondereje1@gmail.com"
+                  >simondereje1@gmail.com</a
+                >
+              </p>
+            </div>
           </div>
-          <div>
-            <button><i class="fa-solid fa-bars"></i></button>
+          <div class="faq-title mt-3">
+            <h4 class="title is-4">Frequently Asked Questions</h4>
+            <div class="content contact-context__desc">
+              <p>Here are the most asked questions.</p>
+            </div>
+            <!--Accordion-->
+            <details open>
+              <summary class="has-background-info-light">
+                How much does your services cost?
+              </summary>
+              <div class="faq__description content">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ratione adipisci illum error, hic expedita numquam impedit
+                  explicabo vitae iure quae.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary class="has-background-info-light">
+                How much does your services cost?
+              </summary>
+              <div class="faq__description">
+                <p>
+                  Consequuntur earum pariatur dolorem repellat temporibus
+                  ducimus sunt suscipit repudiandae cupiditate in accusantium
+                  recusandae tempora sint eligendi.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary class="has-background-info-light">
+                How much does your services cost?
+              </summary>
+              <div class="faq__description">
+                <p>
+                  Tenetur, ex delectus, perferendis aperiam voluptatem
+                  consequuntur molestiae ratione rerum vitae ab modi, minus
+                  placeat quis dignissimos. Dolorem quaerat odit, iusto
+                  laboriosam possimus.
+                </p>
+              </div>
+            </details>
           </div>
-          <div>
+        </div>
+
+        <!-- FAQ's -->
+
+        <!-- Contact Form -->
+        <div class="section column">
+          <h4 class="title is-4 form-title">Contact Form</h4>
+          <div class="columns contact-form">
+            <div class="column">
+              <form action="#" method="post">
+                <div class="field">
+                  <label class="label" for="name">Name</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="email">Email Address</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="moreInfo">More Information</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      id="moreInfo"
+                      name="moreInfo"
+                      rows="4"
+                      placeholder="Write something..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-primary" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer has-background-grey-dark has-text-white-bis">
+      <div class="columns">
+        <div class="column is-half">
+          <div class="content">
+            <img
+              class="logo"
+              src="Images/rsz_logo.png"
+              alt="Logo"
+              width="100px"
+              height="100px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, saepe?
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin is-medium"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h2 class="has-text-white-bis">Useful Links</h2>
             <ul>
-              <li><a href="index1.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="portfolio1.html">Portfolio</a>
-              </li>
-              <li><a href="skills1.html">Skills</a></li>
-              <li><a href="contact-me.html">Contact Me</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <div>
-      <div>
-        <div>
-          <h3>Let's Work Together</h3>
-        </div>
-        <div class="desc">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam atque
-            illum, voluptas neque ratione perferendis quasi iure maiores
-            reprehenderit enim.
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <!-- FAQ's -->
-    <div>
-      <div>
-        <h4>Frequently Asked Questions</h4>
-      </div>
-      <div class="desc">
-        <p>Here are the most asked questions.</p>
+        <div class="column">
+          <div class="content">
+            <h2 class="has-text-white-bis">Contact Info</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, sint?
+            </p>
+            <ul>
+              <li>Tel: +251989971680</li>
+              <li>Email: simon.dereje@aait.edu.et</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div>
+      <div class="content is-flex is-justify-content-space-between">
         <div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Lorem ipsum, dolor sit
-              amet consectetur adipisicing elit. Impedit, fugit!
-            </p>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-              quaerat praesentium quo at excepturi eaque!
-            </p>
-          </div>
+          <p>Copyright 2023. All Rights Reserved</p>
         </div>
         <div>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-              quaerat praesentium quo at excepturi eaque!
-            </p>
-          </div>
+          <p class="footer__p--powered">Powered by Simon</p>
         </div>
-        <div>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-              quaerat praesentium quo at excepturi eaque!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact Form -->
-    <aside>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="moreInfo">More Information:</label>
-        <textarea id="moreInfo" name="moreInfo" rows="4" required></textarea>
-
-        <input type="submit" value="Submit" />
-      </form>
-    </aside>
-
-    <!-- Footer Area -->
-    <footer>
-      <div>
-        <a href="#">Logo</a>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          saepe?
-        </p>
-        <ul>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h2>Useful Links</h2>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact Info</h2>
-        <address>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi,
-            sint?
-          </p>
-          <ul>
-            <li>Tel: +251989971680</li>
-            <li>Email: simon.dereje@aait.edu.et</li>
-          </ul>
-        </address>
-      </div>
-      <div>
-        <p>Copyright. Lorem, ipsum dolor.</p>
-        <p>Copyright. Lorem, ipsum dolor.</p>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    ></script>
   </body>
 </html>
