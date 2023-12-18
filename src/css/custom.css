@@ -1,0 +1,10 @@
+.hero {
+  background: url(/UGR-0952-14/src/Images/cat_small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content .footer__ul {
+  list-style: none;
+  margin-left: 0;
+}
