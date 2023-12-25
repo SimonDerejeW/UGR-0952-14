@@ -4,30 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/custom.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="navbar">
-          <div>
-            <a href="#"><img src="Images/rsz_logo.png" alt="Logo" /></a>
-          </div>
-          <div>
-            <button><i class="fa-solid fa-bars"></i></button>
-          </div>
-          <div>
-            <ul>
-              <li><a href="index1.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="#">Portfolio</a>
+      <nav
+        class="navbar navbar-expand-lg mx-2 justify-content-between bg-body-tertiary"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/rsz_logo.png" alt="Logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBasicExample"
+            aria-controls="navbarBasicExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarBasicExample"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active fw-semibold">
+                <a class="nav-link" href="index1.html">Home</a>
               </li>
-              <li><a href="skills1.html">Skills</a></li>
-              <li><a href="contact-me.html">Contact Me</a></li>
+              <li class="nav-item fw-semibold">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item fw-semibold">
+                <a class="nav-link" href="portfolio1.html">Portfolio</a>
+              </li>
+              <li class="nav-item fw-semibold">
+                <a class="nav-link" href="skills1.html">Skills</a>
+              </li>
+              <li class="nav-item fw-semibold">
+                <a class="nav-link" href="contact-me.html">Contact Me</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -35,142 +65,260 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <h2>Latest Portfolio</h2>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, velit!
-            </p>
+      <section class="container">
+        <div class="row flex-column">
+          <div class="col-md-6 w-100 text-center">
+            <h2>Latest Portfolio</h2>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi, velit!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 w-100 d-flex flex-column align-items-center">
+            <ul class="list-unstyled text-center">
+              <li
+                class="bg-primary bg-danger-hover rounded-pill p-2 my-2"
+                style="--bs-bg-opacity: 0.2"
+              >
+                All Projects
+              </li>
+              <li
+                class="bg-primary rounded-pill p-2 my-2"
+                style="--bs-bg-opacity: 0.2"
+              >
+                UI/UX Design
+              </li>
+              <li
+                class="bg-primary rounded-pill p-2 px-3 my-2"
+                style="--bs-bg-opacity: 0.2"
+              >
+                Web Development
+              </li>
+              <li
+                class="bg-primary rounded-pill p-2 px-3 my-2"
+                style="--bs-bg-opacity: 0.2"
+              >
+                App Development
+              </li>
+            </ul>
           </div>
         </div>
-        <div>
-          <ul>
-            <li>All Projects</li>
-            <li>UI/UX Design</li>
-            <li>Web Development</li>
-            <li>App Developement</li>
-          </ul>
-        </div>
-
-        <div>
-          <figure>
-            <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
-          </figure>
-          <div>
-            <h3><a href="portfolio-details (1).html">Project 1</a></h3>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-white">
+              <figure class="card-img">
+                <img
+                  src="Images/cat_small.jpg"
+                  alt="Portfolio Details Photo"
+                  class="img-fluid"
+                />
+              </figure>
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center"
+              >
+                <div>
+                  <h3><a href="port-details1.html">Project 1</a></h3>
+                </div>
+                <div class="text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-white">
+              <figure class="card-img">
+                <img
+                  src="Images/cat_small.jpg"
+                  alt="Portfolio Details Photo"
+                  class="img-fluid"
+                />
+              </figure>
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center"
+              >
+                <div>
+                  <h3><a href="port-details2.html">Project 2</a></h3>
+                </div>
+                <div class="text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <figure>
-            <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
-          </figure>
-          <div>
-            <h3><a href="portfolio-details (2).html">Project 2</a></h3>
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-white">
+              <figure class="card-img">
+                <img
+                  src="Images/cat_small.jpg"
+                  alt="Portfolio Details Photo"
+                  class="img-fluid"
+                />
+              </figure>
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center"
+              >
+                <div>
+                  <h3><a href="port-details3.html">Project 3</a></h3>
+                </div>
+                <div class="text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-white">
+              <figure class="card-img">
+                <img
+                  src="Images/cat_small.jpg"
+                  alt="Portfolio Details Photo"
+                  class="img-fluid"
+                />
+              </figure>
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center"
+              >
+                <div>
+                  <h3><a href="port-details4.html">Project 4</a></h3>
+                </div>
+                <div class="text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <figure>
-            <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
-          </figure>
-          <div>
-            <h3><a href="portfolio-details (3).html">Project 3</a></h3>
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-white">
+              <figure class="card-img">
+                <img
+                  src="Images/cat_small.jpg"
+                  alt="Portfolio Details Photo"
+                  class="img-fluid"
+                />
+              </figure>
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center"
+              >
+                <div>
+                  <h3><a href="port-details5.html">Project 5</a></h3>
+                </div>
+                <div class="text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
-          </figure>
-          <div>
-            <h3><a href="portfolio-details (4).html">Project 4</a></h3>
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
-          </figure>
-          <div>
-            <h3><a href="portfolio-details (5).html">Project 5</a></h3>
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <img src="Images/cat_small.jpg" alt="Portfolio Details Photo" />
-          </figure>
-          <div>
-            <h3><a href="portfolio-details (6).html">Project 6</a></h3>
-          </div>
-          <div class="desc">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-white">
+              <figure class="card-img">
+                <img
+                  src="Images/cat_small.jpg"
+                  alt="Portfolio Details Photo"
+                  class="img-fluid"
+                />
+              </figure>
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center"
+              >
+                <div>
+                  <h3><a href="port-details6.html">Project 6</a></h3>
+                </div>
+                <div class="text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <!-- Footer Area -->
-    <footer>
-      <div>
-        <a href="#">Logo</a>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          saepe?
-        </p>
-        <ul>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
+    <footer class="footer bg-dark text-white">
+      <div class="row p-2 w-100">
+        <div class="col-md-6">
+          <div class="content">
+            <figure class="image is-96x96 mb-0 ml-0">
+              <img class="logo" src="Images/rsz_logo.png" alt="Logo" />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, saepe?
+            </p>
+          </div>
+          <div class="social-icons w-75 d-flex justify-content-around">
+            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="#"><i class="fab fa-github fa-lg"></i></a>
+            <a href="#"><i class="fab fa-telegram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="content">
+            <h2 class="text-white">Useful Links</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="link-underline link-underline-opacity-0"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-underline link-underline-opacity-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-underline link-underline-opacity-0"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-underline link-underline-opacity-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="content">
+            <h2 class="text-white">Contact Info</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, sint?
+            </p>
+            <ul class="list-unstyled">
+              <li>Tel: +251989971680</li>
+              <li>Email: simon.dereje@aait.edu.et</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2>Useful Links</h2>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact Info</h2>
-        <address>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi,
-            sint?
-          </p>
-          <ul>
-            <li>Tel: +251989971680</li>
-            <li>Email: simon.dereje@aait.edu.et</li>
-          </ul>
-        </address>
-      </div>
-      <div>
-        <p>Copyright. Lorem, ipsum dolor.</p>
-        <p>Copyright. Lorem, ipsum dolor.</p>
+
+      <div class="content d-flex justify-content-between">
+        <div>
+          <p>Copyright 2023. All Rights Reserved</p>
+        </div>
+        <div>
+          <p class="footer__p--powered">Powered by Simon</p>
+        </div>
       </div>
     </footer>
   </body>
